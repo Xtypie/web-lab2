@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация на онлайн-курс</title>
+</head>
+<body>
+    <h2>Регистрация на онлайн-курс</h2>
+
+    <form id="myForm">
+        <label>
+            Имя:<br>
+            <input type="text" name="name" required>
+        </label><br><br>
+
+        <label>
+            Возраст:<br>
+            <input type="number" name="age" min="16" max="100" required>
+        </label><br><br>
+
+        <label>
+            Дата начала курса:<br>
+            <input type="date" name="start_date" required>
+        </label><br><br>
+
+        <label>
+            Курс:<br>
+            <select name="course" required>
+                <option value="Веб-разработка">Веб-разработка</option>
+                <option value="Python">Python</option>
+                <option value="Дизайн">Дизайн</option>
+                <option value="Дифуры">Дифуры</option>
+            </select>
+        </label><br><br>
+
+        <label>
+            <input type="checkbox" name="certificate">
+            Нужен сертификат
+        </label><br><br>
+
+        Форма оплаты:<br>
+        <label>
+            <input type="radio" name="payment" value="Полная" required>
+            Полная оплата
+        </label><br>
+        <label>
+            <input type="radio" name="payment" value="Рассрочка">
+            Рассрочка
+        </label><br><br>
+
+        <button type="submit">Зарегистрироваться</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
